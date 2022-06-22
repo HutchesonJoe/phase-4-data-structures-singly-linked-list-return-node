@@ -1,4 +1,5 @@
 require_relative './node'
+require 'pry'
 
 class LinkedList
   attr_accessor :head
@@ -8,6 +9,7 @@ class LinkedList
   end
 
   def nth_from_end(n)
+    binding.pry
     # your code here
   end
 

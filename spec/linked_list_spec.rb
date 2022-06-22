@@ -1,9 +1,12 @@
+require 'pry'
+
 describe LinkedList do
   let(:linked_list) do 
     linked_list = LinkedList.new
     linked_list.head = Node.new(1)
     linked_list.head.next_node = Node.new(2)
     linked_list.head.next_node.next_node = Node.new(3)
+    binding.pry
     linked_list # 1 -> 2 -> 3
   end
 
